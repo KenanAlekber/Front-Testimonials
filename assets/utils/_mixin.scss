@@ -1,0 +1,24 @@
+@mixin photo-size {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+@mixin names {
+    margin-top: 17px;
+    line-height: 10px;
+    margin-left: 30px;
+    font-size: 19px;
+    cursor: pointer;
+
+    p {
+        font-size: 14px;
+    }
+}
+
+@mixin about-hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    padding: 20px 10px 20px 5px;
+    transition: all 0.7s ease;
+}

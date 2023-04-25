@@ -1,0 +1,73 @@
+@use '../assets/utils/mixin' as mixin;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 80px 40px;
+    background-color: $sectionBackgrondColor;
+}
+
+section {
+    background-color: $bodyBackgrondColor;
+    padding: 10px 50px;
+
+    .header {
+        h1 {
+            margin-top: 10%;
+            margin-left: 95px;
+            font-size: 40px;
+        }
+
+    }
+
+    .content {
+        display: flex;
+        margin: 100px;
+
+        .peoples {
+            width: 25%;
+            min-width: 25%;
+            margin-right: 30%;
+            margin-bottom: 15%;
+
+            .people {
+                display: flex;
+                margin-top: 50px;
+
+                &:hover {
+                    @include mixin.about-hover;
+                }
+
+                img {
+                    @include mixin.photo-size;
+                }
+
+                &-about {
+                    @include mixin.names;
+                }
+                p{
+                    color: $color;
+                }
+
+            }
+        }
+
+        .text {
+            width: 50%;
+            min-width: 50%;
+            margin-top: 4%;
+            padding-right: 135px;
+            font-size: 17px;
+            line-height: 26px;
+
+            i{
+                margin: 10px 0px 40px 0px;
+            }
+
+        }
+    }
+}
